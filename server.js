@@ -13,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/auth", require("./routes/auth.routes"));
 app.use("/api/batch", require("./routes/batch.routes"));
+app.use("/api/batch-students", require("./routes/batchStudent.routes"));
 
 // Test route
 app.get("/", (req, res) => {
